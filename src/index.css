@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary-black: #24232c;
+  --color-grey: #817d92;
+  --color-white: #e6e5ea;
+  --color-secondary-black: #18171f;
+  --color-green: #a4ffaf;
+  /* --color-green: #89e794; */
+  --color-pink: #f64a4a;
+  --color-orange: #fb7c58;
+  --color-yellow: #f8cd65;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+}
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+body {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.8rem;
+  line-height: 1.23;
+  color: var(--color-white);
+  background-color: var(--color-secondary-black);
+}
+main {
+  width: 54rem;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+}
+.setup {
+  width: 100%;
+  padding: 3.4rem;
+  background-color: var(--color-secondary-black);
+}
+.char {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.value {
+  color: var(--color-green);
+  font-weight: 600;
+}
+.char-length {
+  text-transform: capitalize;
+}
+.character {
+  background-color: var(--color-primary-black);
+  padding: 3.2rem;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+}
+form {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 3.2rem;
+  /* background-color: var(--color-primary-black); */
+}
+.submit {
+  width: 100%;
+  display: flex;
+  outline: none;
+  justify-content: center;
+  color: var(--color-primary-black);
+  background-color: var(--color-green);
+  gap: 2.4rem;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  /* margin-top: 3.2rem; */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.submit:hover {
+  background-color: #89e794;
+}
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.submit:hover .arrow {
+  transform: translateX(3px);
+}
+.password-strength {
+  width: 100%;
+  background-color: var(--color-secondary-black);
+  padding: 2.1rem 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.p {
+  color: var(--color-grey);
+  font-size: 1.6rem;
+}
+.strength {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.strength p {
+  color: var(--color-white);
+  font-size: 1.8rem;
+}
+.strength-bar {
+  width: 1rem;
+  height: 2.8rem;
+}
+.strength-bar-container {
+  display: flex;
+  gap: 8px;
+}
+.password {
+  padding: 1.9rem 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.6rem;
+  background-color: var(--color-primary-black);
+}
+.password svg {
+  outline: none;
+  background-color: none;
+  cursor: pointer;
+}
